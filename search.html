@@ -1,0 +1,73 @@
+<html>
+<head>
+	<title>Search House</title>
+	<link rel="stylesheet" type="text/css" href="search.css">
+	<script type="text/javascript">
+	 function populate(s1,s2){
+		var s1 = document.getElementById(s1);
+		var s2 = document.getElementById(s2);
+		s2.innerHTML = "";
+		if(s1.value == "AndhraPradesh"){
+			var optionArray=["Gajuwaka|gajuwaka","Vadlapudi|vadlapudi","Anakapalle|anakapalle"];
+		} else if(s1.value == "Chennai"){
+			var optionArray=["Chrompet|chrompet","Ennore|ennore","GeorgeTown|georgetown"];
+		} else if(s1.value == "Hyderabad"){
+			var optionArray=["BanjaraHills|banjarahills","Begumpet|begumpet","Gachibowli|gachibowli"];
+		} else if(s1.value == "Banglore"){
+			var optionArray=["Malleswaram|malleswaram","Hebbal|hebbal","Jayanagar|jayanagar"];
+		} else if(s1.value == "Vijayawada"){
+			var optionArray=["Guntur|guntur","Nellore|nellore","Nallapadu|nallapadu"];
+		}  else if(s1.value == "Tirupati"){
+			var optionArray=["Akkarapalle|akkarapalle","BalajiColony|balajicolony","DwarakaNagar|dwarakanagar"];
+		}  else if(s1.value == "Goa"){
+			var optionArray=["Panaj|panaj","Mapusa|mapusa","Bicholim|bicholim"];
+        }  else if(s1.value == "Kakinada"){
+			var optionArray=["Adurru|adurru","Pitapuram|pitapuram","Draksharamam|draksharamam"];
+        }  else if(s1.value == "WestBengal"){
+			var optionArray=["Durgapur|durgapur","Habra|habra","Haldia|haldia"];
+        }   else if(s1.value == "Delhi"){
+			var optionArray=["KarolBagh|karolbagh","ChandiniChowk|chandinichowk","RajputMarg|rajputmarg"];
+        }			
+		for(var option in optionArray){
+		var pair = optionArray[option].split("|");
+		var newOption=document.createElement("option");
+		newOption.value=pair[0];
+		newOption.innerHTML=pair[1];
+		s2.options.add(newOption);
+		}
+		}
+    </script>	
+</head>
+<body>
+	<div class="search">
+		<img src="" class="icon">
+		<h1>SEARCH HERE..</h1>
+			<label>Select category:</label>
+			<select id="typeofhouses">
+			<option value="Rental">Rental</option>
+			<option value="Booking">Booking</option>
+			</select><br></hr>
+			<label>Country:</label>
+			<select id="country">
+			<option value="India">India</option>
+			</select><br></hr>
+			<label>State:</label>
+			<select id="select1" name="select1" onchange="populate(this.id,'select2')">
+			<option value="AndhraPradesh">Andhra Pradesh</option>
+			<option value="Chennai">Chennai</option>
+			<option value="Hyderabad">Hyderabad</option>
+			<option value="Banglore">Banglore</option>
+			<option value="Vijayawada">Vijayawada</option>
+			<option value="Tirupati">Tirupati</option>
+			<option value="Goa">Goa</option>
+			<option value="Kakinada">Kakinada</option>
+			<option value="WestBengal">WestBengal</option>
+			<option value="Delhi">Delhi</option>
+			</select><br></hr>
+			<label>Area:</label>
+		    <select id="select2" name="select2"></select><b>
+			<br>
+			<br>
+		<input type="submit" name="search"value="search">	
+</body>
+</html>		
