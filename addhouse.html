@@ -1,45 +1,6 @@
 <html>
 <head>
-<title>RESULTS PAGE</title>
-  <script>
-function ValidateEmail(mail)
-{
-  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value))
-    {
-return (true)
-    }
-alert("You have entered an invalid email address!")
-    return (false)
-}
-function CheckPassword(inputtxt)
-{
-var passw=  /^[A-Za-z]\w{7,14}$/;
-if(inputtxt.value.match(passw))
-{
-alert('Correct, try another...')
-return true;
-}
-else
-{
-alert('Wrong...!')
-return false;
-}
-}
-
-function phonenumber(inputtxt)
-{
-  var phoneno = /^\d{10}$/;
-  if(inputtxt.value.match(phoneno))
-  {
-      return true;
-  }
-  else
-  {
-      alert("Not a valid Phone Number");
-      return false;
-  }
-  }
-  </script>
+<title>AddHouse</title>
 <style>
 h1{
 color: blue;
@@ -47,27 +8,27 @@ align: center;
 font-weight: bolder;
 }
 #re{
-font-size: 20px;
-font-weight:bolder;
-color: black;
+font-alice: 20px;
+color: maroon;
 text-align: center;
-background:url(1.jpg);
-height:800px;
+background-color: #F0F8FF;
 }
 </style>
 </head>
 <body>
-<h1 align="center">RESULTS PAGE</h1>
+<h1 align="center">ADD HOUSE</h1>
 <div id="re">
 </br>
-<img  src="https://jamaicaclassifiedonline.com/images/2018/03/11/46168/2-bedroom-1-bathroom-house-for-rent-ayh7twxe_1.jpg" height=200" width="200"></br></br>
-PROPERTY CODE:<input type="text" name="code"></br></br>
-PROPERTY NAME:<input type="text" name="name"></br></br>
-TOTAL AREA:<input type="text" name="area"></br></br>
-PROPERTY COST:<input type="text" name="cost"></br></br>
-TOTAL ROOMS:<input type="text" name="Rooms"></br></br>
-CONSTRUCTION YEAR:<input type="text" name="age"></br></br>
-OWNER DATA:<input type="text" name="age"></br></br>
+HOUSE TITLE:<input type="text" name="title"></br></br>
+HOUSE OVERVIEW:<input type="text" name="overview"></br></br>
+PRICE PER MONTH:<input type="text" name="price"></br></br>
+SELECT FLOOR TYPE:<input type="radio" name="floor">Ground<input type="radio" name="floor">1st<input type="radio" name="floor">2nd<input type="radio" name="floor">3rd<input type="radio" name="floor">4th</br></br>
+CONSTRUCTION YEAR:<input type="text" name="title"></br></br>
+ROOM CAPACITY:<input type="text" name="title"></br></br>
+UPLOAD IMAGE:<input type="file" name="title"><input type="file" name="title"><input type="file" name="title"></br></br>
+ACCESORIES:<input type="checkbox" name="accesories">Garden<input type="checkbox" name="accesories">SwimmingPool<input type="checkbox" name="accesories">Gym<input type="checkbox" name="accesories">Balcony</br></br>
+<input type="checkbox" name="accesories">Park<input type="checkbox" name="accesories">Temple<input type="checkbox" name="accesories">RoofCeiling<input type="checkbox" name="accesories">ventilization</br></br>
+<input type="button" value="submit">
 </div>
 </body>
 </html>
