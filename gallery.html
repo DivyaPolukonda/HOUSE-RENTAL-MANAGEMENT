@@ -1,180 +1,122 @@
+<!DOCTYPE html>
 <html>
 <head>
-<style>
-* {box-sizing:border-box}
+ <title>Gallery</title>
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+<link href="https://fonts.googleapis.com/css?family=Dokdo" rel="stylesheet">
+
+<style type="text/css">
+ 
+ *{
+   margin: 0px;
 }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
+h1{
+ text-align: center;
+}
+p{
+ font-size: 55px;
 }
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+header{
+
+font-family: 'Dokdo', cursive;
+font-size: 30px;
+padding: 20px;
+}
+main{
+      margin-left: 120px;
+        width: 100%;
+        margin-top: 40px;
+}
+.box{
+ width: 20%;
+ float: left;
+ padding: 7px;
+ padding-left: 10px;  
+ display: block;
+
 }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+img{
+ width: 100%;
+    border-radius: 4px;
+
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+img:hover{
+  transform: scale(1.3,1.3);
+  transition: .3s transform;
+
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
 </style>
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 3000); // Change image every 2 seconds
-}
-</script>
+</head>
 <body>
-<!-- Slideshow container -->
-<div class="slideshow-container">
 
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 3</div>
-    <img src="1.jpg" style="width:100%">
-    <div class="text">Luxury Houses</div>
-  </div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 3</div>
-    <img src="pic5.jpg" style="width:100%">
-    <div class="text">Sweet Home</div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 3</div>
-    <img src="im3.jpg" style="width:100%">
-    <div class="text">houses with extraordinary facilities</div>
-  </div>
-
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+<main>
+ <div class="box">
+ <a href="book.html">
+<img src="https://tinyhousetalk.com/wp-content/uploads/Tiny-House-For-Rent-in-Battle-Ground-Oregon-001.jpg">
+<h3>Small Rented house at gangnam of two rooms</h3>
+</a>
 </div>
-<br>
-
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
+<div class="box">
+<a href="book.html">
+<img src="http://ww1.prweb.com/prfiles/2012/12/18/10269808/rent-to-own-homes-jacksonville-fl.jpg">
+<h3>small rented house at dwarakanagar</h3>
+</a>
 </div>
+<div class="box">
+<a href="book.html">
+<img src="https://www.rent-holiday-homes.com/objectpics/img4e477a9f33a956.64863362.jpg">
+<h3>A rented house of 4 rooms and garden available</h3>
+</a>
+</div>
+<div class="box">
+<a href="book.html">
+<img src="https://i.pinimg.com/originals/ac/4d/57/ac4d574b59e504d8252f392a1ae6ed40.jpg">
+<h3>secondfloor flat at ambika nagar available</h3>
+</a>
+</div>
+<div class="box">
+<a href="book.html">
+<img src="https://www.adpost.com/classifieds/upload/in/homes_offices/in_homes_offices.41151.1.jpg?bypass">
+<h3>A small independent house at gannavaram available</h3>
+</a>
+</div>
+<div class="box">
+<a href="book.html">
+<img src="https://dynamic.realestateindia.com/prop_images/17193/324774_1.jpg">
+<h3>A 2 room rented house available</h3>
+</a>
+</div>
+<div class="box">
+<a href="book.html">
+<img src="https://a0.muscache.com/im/pictures/a99641e1-8b4f-44b8-b892-cda14bcad495.jpg?aki_policy=x_large">
+<h3>A house at city outskirts available</h3>
+</a>
+</div>
+<div class="box">
+<a href="book.html">
+<img src="https://a0.muscache.com/im/pictures/12004284/cc944da7_original.jpg?aki_policy=x_large">
+<h3>An independent house  at city outskirts available</h3>
+</a>
+</div>
+<div class="box">
+<a href="book.html">
+<img src="https://onlinerealestateindiaproperty.files.wordpress.com/2014/03/properties-hyderabad.jpg">
+<h3>Flats for rent</h3>
+</a>
+</div>
+
+</main>
+
+
+
 </body>
 </html>
 
